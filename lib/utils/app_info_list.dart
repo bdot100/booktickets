@@ -61,5 +61,5 @@ List<Map<String, dynamic>> ticketList = [
     'date': "1 May",
     'departure_time': "08:00 AM",
     'number': 23
-  },
+  }
 ];
