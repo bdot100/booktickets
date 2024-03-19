@@ -6,7 +6,6 @@ import 'package:booktickets/widgets/column_layout.dart';
 import 'package:booktickets/widgets/layout_builder_widget.dart';
 import 'package:booktickets/widgets/ticket_tabs.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 import 'package:barcode_widget/barcode_widget.dart';
 
@@ -132,7 +131,7 @@ class TicketScreen extends StatelessWidget {
             left: AppLayout.getHeight(22, context),
             top: AppLayout.getHeight(295, context),
             child: Container(
-              padding: EdgeInsets.all(3),
+              padding: const EdgeInsets.all(3),
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(color: Styles.textColor, width: 2)
@@ -147,7 +146,7 @@ class TicketScreen extends StatelessWidget {
             right: AppLayout.getHeight(22, context),
             top: AppLayout.getHeight(295, context),
             child: Container(
-              padding: EdgeInsets.all(3),
+              padding: const EdgeInsets.all(3),
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(color: Styles.textColor, width: 2)
