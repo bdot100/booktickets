@@ -6,6 +6,7 @@ import 'package:booktickets/widgets/column_layout.dart';
 import 'package:booktickets/widgets/layout_builder_widget.dart';
 import 'package:booktickets/widgets/ticket_tabs.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 import 'package:barcode_widget/barcode_widget.dart';
 
@@ -124,6 +125,38 @@ class TicketScreen extends StatelessWidget {
                 child: TicketView(ticket: ticketList[0], isColor: null,),
               ),
             ],
+          ),
+
+          //the two dots by the side of the page
+          Positioned(
+            left: AppLayout.getHeight(22, context),
+            top: AppLayout.getHeight(295, context),
+            child: Container(
+              padding: EdgeInsets.all(3),
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(color: Styles.textColor, width: 2)
+              ),
+              child: CircleAvatar(
+                maxRadius: 4,
+                backgroundColor: Styles.textColor,
+              ),
+            ),
+          ),
+          Positioned(
+            right: AppLayout.getHeight(22, context),
+            top: AppLayout.getHeight(295, context),
+            child: Container(
+              padding: EdgeInsets.all(3),
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(color: Styles.textColor, width: 2)
+              ),
+              child: CircleAvatar(
+                maxRadius: 4,
+                backgroundColor: Styles.textColor,
+              ),
+            ),
           ),
         ],
       ),
