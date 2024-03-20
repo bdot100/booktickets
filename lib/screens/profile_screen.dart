@@ -4,7 +4,6 @@ import 'package:booktickets/widgets/column_layout.dart';
 import 'package:booktickets/widgets/layout_builder_widget.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class ProfileScreen extends StatelessWidget {
